@@ -12,6 +12,7 @@ import SelectOptsDemo from './select-opts-demo';
 import TextFieldDemo from './text-field-demo';
 import './normalize.css'
 import CheckboxSlideDemo from './check-box-slide-demo';
+import { AccessType } from 'daro-ui-kit';
 
 
 function Demo() {

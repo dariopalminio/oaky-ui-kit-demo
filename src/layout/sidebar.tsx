@@ -1,5 +1,5 @@
 
-import { MenuItemType, MenuList } from "daro-ui-kit";
+import { AccessType, MenuItemType, MenuList } from "daro-ui-kit";
 import styled from "styled-components";
 import { RiFunctionFill, RiHome2Fill, RiShoppingCart2Fill } from "react-icons/ri";
 
@@ -40,7 +40,7 @@ const SideBar: React.FC = () => {
       title: ("menu.option3"),
       path: "/",
       icon: <RiShoppingCart2Fill />,
-      access: ["anonymous", "user", "admin"],
+      access: [AccessType.ANONYMOUS, AccessType.USER, AccessType.ADMIN],
       submenu: null
     },
 
