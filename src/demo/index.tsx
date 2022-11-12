@@ -13,6 +13,7 @@ import TextFieldDemo from './text-field-demo';
 import './normalize.css'
 import CheckboxSlideDemo from './check-box-slide-demo';
 import { AccessType } from 'daro-ui-kit';
+import LinksStepperDemo from './link-steppers.-demo';
 
 
 function Demo() {
@@ -37,6 +38,8 @@ function Demo() {
             <IconButtonDemo />
 
             <ImgCarouselDemo />
+
+            <LinksStepperDemo/>
 
             <ModalDialogDemo />
 
