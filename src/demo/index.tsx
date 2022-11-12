@@ -11,6 +11,8 @@ import SelectListDemo from './select-list-demo';
 import SelectOptsDemo from './select-opts-demo';
 import TextFieldDemo from './text-field-demo';
 import './normalize.css'
+import CheckboxSlideDemo from './check-box-slide-demo';
+
 
 function Demo() {
 
@@ -27,13 +29,15 @@ function Demo() {
 
             <ButtonQuantityDemo />
 
+            <CheckboxSlideDemo />
+
+            <ProgressDemo />
+            
             <IconButtonDemo />
 
             <ImgCarouselDemo />
 
             <ModalDialogDemo />
-
-            <ProgressDemo />
 
             <RadioButtonListDemo />
 
@@ -42,6 +46,8 @@ function Demo() {
             <SelectOptsDemo />
 
             <TextFieldDemo />
+
+
         </div>
 
     )
