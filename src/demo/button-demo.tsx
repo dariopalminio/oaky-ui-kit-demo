@@ -22,7 +22,7 @@ function ButtonDemo() {
         <div>
             <h2>Button</h2>
             <CenteringContainer>
-                <Button type="button" onClick={handleClickOpen} style={{ marginTop: "15px" }} styleType={"disabled"}>
+                <Button type="xxxx" onClick={handleClickOpen} style={{ marginTop: "15px" }} styleType={"disabled"}>
                     disabled
                 </Button>
                 &nbsp;&nbsp;
