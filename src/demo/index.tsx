@@ -14,6 +14,7 @@ import './normalize.css'
 import CheckboxSlideDemo from './check-box-slide-demo';
 import { AccessType } from 'daro-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
+import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
 
 
 function Demo() {
@@ -25,6 +26,7 @@ function Demo() {
 
             <p>UI Kit with react, typescript, styled-components and CSS</p>
 
+<AcordeonMenuItemDemo />
             <AlertsDemo />
 
             <ButtonDemo />

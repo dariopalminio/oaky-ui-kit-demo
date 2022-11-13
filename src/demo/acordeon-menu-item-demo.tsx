@@ -1,0 +1,84 @@
+
+import {AccessType, MenuItemType} from "daro-ui-kit"
+import {useAlertPopup} from "daro-ui-kit";
+import { RiFunctionFill, RiHome2Fill, RiShoppingCart2Fill } from "react-icons/ri";
+import {AcordeonMenuList} from "daro-ui-kit";
+
+
+function AcordeonMenuItemDemo() {
+    const { show, toggle } = useAlertPopup();
+
+    const subMenu: MenuItemType[] = [
+        {
+          key: "11",
+          title: ("My Sub Menu 1"),
+          path: "/",
+          icon: <RiHome2Fill />,
+          access: ["anonymous", "user", "admin"],
+          submenu: null
+        },
+        {
+          key: "12",
+          title: ("My Sub Menu option2"),
+          path: "/demo",
+          icon: <RiFunctionFill />,
+          access: ["anonymous", "user", "admin"],
+          submenu: null
+        },
+        {
+          key: "13",
+          title: ("My Sub Menu option3"),
+          path: "/",
+          icon: <RiShoppingCart2Fill />,
+          access: [AccessType.ANONYMOUS, AccessType.USER, AccessType.ADMIN],
+          submenu: null
+        },
+    
+      ];
+
+      const menu: MenuItemType[] = [
+        {
+          key: "111",
+          title: ("My Menu A"),
+          path: "/",
+          icon: <RiHome2Fill />,
+          access: ["anonymous", "user", "admin"],
+          submenu: subMenu
+        },
+        {
+            key: "14",
+            title: ("My Menu Acordeon B"),
+            path: "/",
+            icon: <RiHome2Fill />,
+            access: ["anonymous", "user", "admin"],
+            submenu: subMenu
+          },
+          {
+            key: "16",
+            title: ("Acordeon"),
+            path: "/",
+            icon: <RiHome2Fill />,
+            access: ["anonymous", "user", "admin"],
+            submenu: subMenu
+          }
+        ]
+      ;
+
+      const handleClick = (item: MenuItemType) => {
+        //Here do navigate to path
+        alert(`Select item path: ${item.title}`);
+      }
+
+    return (
+
+        <div>
+            <h2>AcordeonMenuList</h2>
+
+            <AcordeonMenuList list={menu} onClick={(item) => handleClick(item)} />
+               
+        </div>
+
+    )
+}
+
+export default AcordeonMenuItemDemo
