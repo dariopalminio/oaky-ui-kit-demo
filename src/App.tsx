@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 import logoImg from "./demo/assets/logo_demo.png";
 import MainContainer from "./layout/main-container";
 import Bar from "./layout/bar";
+import {LayoutPrimary} from "daro-ui-kit";
 
 
 function App() {
@@ -19,13 +20,13 @@ function App() {
       <Router>
         <ThemeProvider theme={Themes}>
             <LayoutContextProvider>
-              <Layout
+              <LayoutPrimary
                 topbar={<TopNavBar logo={logoImg} bar={<Bar />} />}
                 leftbar={<SideBar />}
                 footer={<Footer />}
               >
                 <MainContainer />
-              </Layout>
+              </LayoutPrimary>
             </LayoutContextProvider>
           </ThemeProvider>
       </Router>
