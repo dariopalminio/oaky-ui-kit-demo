@@ -25,6 +25,7 @@ function App() {
       <Router>
         <ThemeProvider theme={Themes}>
           <LayoutContextProvider>
+
             {(layoutStyle === "primary") && (
               <LayoutPrimary
                 topbar={<TopNavBar logo={logoImg} bar={<Bar />} />}
@@ -36,6 +37,7 @@ function App() {
                   onLayoutChange={(newLayoutStyle) => handleLayoutChange(newLayoutStyle)} />
               </LayoutPrimary>
             )}
+            
             {(layoutStyle === "secondary") && (
               <LayoutSecondary
                 topbar={<TopNavBar logo={logoImg} bar={<Bar />} />}
