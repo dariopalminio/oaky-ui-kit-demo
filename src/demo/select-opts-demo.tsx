@@ -2,19 +2,19 @@
 import { useState } from 'react';
 import { CenteringContainer } from "daro-ui-kit"
 import {SelectOptions} from "daro-ui-kit"
-/**
-<SelectOpts
-                    label={'Select any option:'}
-                    list={listToSelect}
-                    selectedOption={selectedOption}
-                    setSelectedOption={(selectedOption) => handleChange(selectedOption)} />
- */
-function SelectOptsDemo() {
-    const listToSelect = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-    const [selectedOption, setSelectedOption] = useState('Option 1');
+
+interface Props {
+    layoutStyle: string;
+    onLayoutChange: (layoutStyle: string) => void;
+}
+
+const SelectOptsDemo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
+
+    const listToSelect = ['primary', 'secondary'];
+    //const [selectedOption, setSelectedOption] = useState('primary');
 
     const handleSelect = (selectedOption: string) => {
-        setSelectedOption(selectedOption);
+        onLayoutChange(selectedOption);
     };
 
     return (
@@ -22,11 +22,10 @@ function SelectOptsDemo() {
         <div>
             <h2>SelectOptions</h2>
             <CenteringContainer>
-
             <SelectOptions
-                label={('Select following Options:')}
+                label={('Select primary or secondary Layout style type:')}
                 list={listToSelect}
-                selectedOption={selectedOption}
+                selectedOption={layoutStyle}
                 setSelectedOption={(selectedOption) => handleSelect(selectedOption)} 
                 placeholder={('field.placeholder.select.option')}/>
                 

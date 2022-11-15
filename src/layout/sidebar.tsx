@@ -4,20 +4,16 @@ import styled from "styled-components";
 import { RiFunctionFill, RiHome2Fill, RiShoppingCart2Fill } from "react-icons/ri";
 import { useContext } from "react";
 
-//Styled-components
-const SideBarInner = styled.div`
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        background: #F9F9F9;
-`;
 
 
+interface Props {
+  background: string;
+}
 
 /**
  * Patterns: Compound Components, Context Provider and Extensible Styles
  */
-const SideBar: React.FC = () => {
+ const SideBar: React.FC<Props> = ({ background }) => {
 
   const { sidebarWidth,
     isSidebarOpen,
@@ -120,7 +116,7 @@ const SideBar: React.FC = () => {
   }
 
   return (
-    <div>
+    <div style={{background: background, height: "100%"}}>
       <MenuList
         onClick={(item: MenuItemType) => handleClick(item)}
         id="MenuLeft"

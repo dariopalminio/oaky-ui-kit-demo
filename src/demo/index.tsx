@@ -16,46 +16,38 @@ import { AccessType } from 'daro-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
 
+interface Props {
+    layoutStyle: string;
+    onLayoutChange: (layoutStyle: string) => void;
+}
 
-function Demo() {
+const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
 
     return (
-
         <div>
             <h1>it-simple-react-ui</h1>
 
             <p>UI Kit with react, typescript, styled-components and CSS</p>
 
-<AcordeonMenuItemDemo />
+            <SelectOptsDemo
+                layoutStyle={layoutStyle}
+                onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
+
+            <AcordeonMenuItemDemo />
             <AlertsDemo />
-
             <ButtonDemo />
-
             <ButtonQuantityDemo />
-
             <CheckboxSlideDemo />
-
             <ProgressDemo />
-            
             <IconButtonDemo />
-
             <ImgCarouselDemo />
-
-            <LinksStepperDemo/>
-
+            <LinksStepperDemo />
             <ModalDialogDemo />
-
             <RadioButtonListDemo />
-
             <SelectListDemo />
-
-            <SelectOptsDemo />
-
             <TextFieldDemo />
 
-
         </div>
-
     )
 }
 

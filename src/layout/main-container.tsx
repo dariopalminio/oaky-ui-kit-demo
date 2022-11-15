@@ -5,20 +5,29 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Demo from "../demo";
 
 
-/**
- * Main Container with principals routes
- * 
- * @visibleName MainContainer View
- */
-const MainContainer: FunctionComponent = () => {
+interface Props {
+  layoutStyle: string;
+  onLayoutChange: (layoutStyle: string) => void;
+}
+
+const MainContainer: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
 
   try {
     return (
       <div>
         <Routes>
-          <Route path="/"  element={<Demo />} />
-          <Route path="/demo"  element={<Demo />} />
-          <Route path="*" element={<Demo />} />
+          <Route path="/" element={
+            <Demo layoutStyle={layoutStyle}
+              onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
+          } />
+          <Route path="/demo" element={
+            <Demo layoutStyle={layoutStyle}
+              onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
+          } />
+          <Route path="*" element={
+            <Demo layoutStyle={layoutStyle}
+              onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
+          } />
         </Routes>
       </div>
     );
