@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components"
 import Demo from './demo';
-import { LayoutSecondary, Themes } from "daro-ui-kit";
+import { Themes, getThemes } from "daro-ui-kit";
 import SideBar from "./layout/sidebar";
 import Footer from "./layout/footer";
 import { LayoutContextProvider } from "daro-ui-kit";
@@ -9,45 +9,61 @@ import { BrowserRouter as Router } from "react-router-dom"
 import logoImg from "./demo/assets/logo_demo.png";
 import MainContainer from "./layout/main-container";
 import Bar from "./layout/bar";
-import { LayoutPrimary } from "daro-ui-kit";
+import { LayoutCore, LayoutSensitive, LayoutBullet } from "daro-ui-kit";
 import { useState } from "react";
 
 
 function App() {
-  const [layoutStyle, setLayoutStyle] = useState<string>("secondary");
+  const [layoutStyle, setLayoutStyle] = useState<string>("core");
+  const [themes, setThemes] = useState(Themes);
 
   const handleLayoutChange = (newLayoutStyle: string) => {
+    const t = getThemes(newLayoutStyle);
+    console.log("New Themes:",t);
+    setThemes(getThemes(newLayoutStyle));
     setLayoutStyle(newLayoutStyle);
   };
 
   return (
     <div className="App">
       <Router>
-        <ThemeProvider theme={Themes}>
+        <ThemeProvider theme={themes}>
           <LayoutContextProvider>
 
-            {(layoutStyle === "primary") && (
-              <LayoutPrimary
-                topbar={<TopNavBar logo={logoImg} bar={<Bar />} />}
-                leftbar={<SideBar background={"#33A3FF"}/>}
+            {(layoutStyle === "core") && (
+              <LayoutCore
+                topbar={<TopNavBar logo={logoImg} bar={<Bar />}/>}
+                leftbar={<SideBar background={"#305F87"}/>}
                 footer={<Footer />}
               >
                 <MainContainer
                   layoutStyle={layoutStyle}
                   onLayoutChange={(newLayoutStyle) => handleLayoutChange(newLayoutStyle)} />
-              </LayoutPrimary>
+              </LayoutCore>
             )}
             
-            {(layoutStyle === "secondary") && (
-              <LayoutSecondary
-                topbar={<TopNavBar logo={logoImg} bar={<Bar />} />}
+            {(layoutStyle === "sensitive") && (
+              <LayoutSensitive
+                topbar={<TopNavBar style={{background:"#C6DBEC"}} logo={logoImg} bar={<Bar />} />}
                 leftbar={<SideBar background={"#6EA3CD"}/>}
                 footer={<Footer />}
               >
                 <MainContainer
                   layoutStyle={layoutStyle}
                   onLayoutChange={(newLayoutStyle) => handleLayoutChange(newLayoutStyle)} />
-              </LayoutSecondary>
+              </LayoutSensitive>
+            )}
+
+            {(layoutStyle === "bullet") && (
+              <LayoutBullet
+                topbar={<TopNavBar style={{background:"#C6DBEC"}}  bar={<Bar />} />}
+                leftbar={<SideBar background={"#305F87"}/>}
+                footer={<Footer />}
+              >
+                <MainContainer
+                  layoutStyle={layoutStyle}
+                  onLayoutChange={(newLayoutStyle) => handleLayoutChange(newLayoutStyle)} />
+              </LayoutBullet>
             )}
 
           </LayoutContextProvider>

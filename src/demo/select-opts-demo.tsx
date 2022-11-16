@@ -10,7 +10,7 @@ interface Props {
 
 const SelectOptsDemo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
 
-    const listToSelect = ['primary', 'secondary'];
+    const listToSelect = ['core', 'sensitive', 'bullet'];
     //const [selectedOption, setSelectedOption] = useState('primary');
 
     const handleSelect = (selectedOption: string) => {
@@ -23,7 +23,7 @@ const SelectOptsDemo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <h2>SelectOptions</h2>
             <CenteringContainer>
             <SelectOptions
-                label={('Select primary or secondary Layout style type:')}
+                label={('Select core, sensitive or leftButton Layout style type:')}
                 list={listToSelect}
                 selectedOption={layoutStyle}
                 setSelectedOption={(selectedOption) => handleSelect(selectedOption)} 
