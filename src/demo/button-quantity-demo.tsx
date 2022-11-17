@@ -33,6 +33,7 @@ function ButtonQuantityDemo() {
                 <ButtonQuantity
                     value={quantity1}
                     disabled={true}
+                    styleType={"disabled"}
                     onChange={(newQuantityValue: number) => handlerNewQuantityValue1(newQuantityValue)} />
                 &nbsp;&nbsp;
                 <ButtonQuantity

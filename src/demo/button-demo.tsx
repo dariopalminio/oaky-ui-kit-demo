@@ -1,6 +1,6 @@
 
 import { CenteringContainer } from "daro-ui-kit"
-import { Button } from "daro-ui-kit"
+import { Button, ButtonNeon } from "daro-ui-kit"
 import { PreviousNextButtons } from "daro-ui-kit"
 
 function ButtonDemo() {
@@ -38,6 +38,27 @@ function ButtonDemo() {
                     danger
                 </Button>
             </CenteringContainer>
+
+            <h2>ButtonNeon</h2>
+            <CenteringContainer>
+                <ButtonNeon type="button" onClick={handleClickOpen} style={{ marginTop: "15px" }} styleType={"disabled"}>
+                    disabled
+                </ButtonNeon>
+                &nbsp;&nbsp;
+                <ButtonNeon type="button" onClick={handleClickOpen} style={{ marginTop: "15px" }} styleType={"primary"}>
+                    primary
+                </ButtonNeon>
+                &nbsp;&nbsp;
+                <ButtonNeon type="button" onClick={handleClickOpen} style={{ marginTop: "15px" }} styleType={"secondary"}>
+                    secondary
+                </ButtonNeon>
+                &nbsp;&nbsp;
+                <ButtonNeon type="button" onClick={handleClickOpen} style={{ marginTop: "15px" }} styleType={"danger"}>
+                    danger
+                </ButtonNeon>
+            </CenteringContainer>
+
+
             <h2>PreviousNextButtons</h2>
 
             <PreviousNextButtons labelPrevious={'Previous'} labelNext={'Next'}

@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components"
 import Demo from './demo';
-import { Themes, getThemes } from "daro-ui-kit";
+import { ThemeCore, getTheme } from "daro-ui-kit";
 import SideBar from "./layout/sidebar";
 import Footer from "./layout/footer";
 import { LayoutContextProvider } from "daro-ui-kit";
@@ -15,12 +15,11 @@ import { useState } from "react";
 
 function App() {
   const [layoutStyle, setLayoutStyle] = useState<string>("core");
-  const [themes, setThemes] = useState(Themes);
+  const [themes, setThemes] = useState(ThemeCore);
 
   const handleLayoutChange = (newLayoutStyle: string) => {
-    const t = getThemes(newLayoutStyle);
-    console.log("New Themes:",t);
-    setThemes(getThemes(newLayoutStyle));
+    const t = getTheme(newLayoutStyle);
+    setThemes(getTheme(newLayoutStyle));
     setLayoutStyle(newLayoutStyle);
   };
 
