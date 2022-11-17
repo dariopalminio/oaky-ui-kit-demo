@@ -12,9 +12,10 @@ import SelectOptsDemo from './select-opts-demo';
 import TextFieldDemo from './text-field-demo';
 import './normalize.css'
 import CheckboxSlideDemo from './check-box-slide-demo';
-import { AccessType } from 'daro-ui-kit';
+import { Tooltip } from 'daro-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
+
 
 interface Props {
     layoutStyle: string;
@@ -46,6 +47,9 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <RadioButtonListDemo />
             <SelectListDemo />
             <TextFieldDemo />
+            <h1>Tooltip</h1>
+            <Tooltip helpText={"Example help text!"}>Hover mouse over (on yellow background) to show help text</Tooltip>
+
 
         </div>
     )
