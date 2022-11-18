@@ -33,7 +33,7 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <SelectOptsDemo
                 layoutStyle={layoutStyle}
                 onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
-
+<ModalDialogDemo />
             <AcordeonMenuItemDemo />
             <AlertsDemo />
             <ButtonDemo />
@@ -43,7 +43,6 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <IconButtonDemo />
             <ImgCarouselDemo />
             <LinksStepperDemo />
-            <ModalDialogDemo />
             <RadioButtonListDemo />
             <SelectListDemo />
             <TextFieldDemo />
