@@ -16,7 +16,7 @@ import { Tooltip } from 'oaky-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
 import TableGridDemo from './table-grid-demo';
-
+import logo from './assets/oaku-ui-kit-logo.png';
 
 interface Props {
     layoutStyle: string;
@@ -27,8 +27,7 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
 
     return (
         <div>
-            <h1>it-simple-react-ui</h1>
-
+            <img src={logo} alt="Oaky-ui-kit"  width="20%"/>
             <p>UI Kit with react, typescript, styled-components and CSS</p>
 
             <SelectOptsDemo
