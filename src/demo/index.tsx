@@ -12,7 +12,7 @@ import SelectOptsDemo from './select-opts-demo';
 import TextFieldDemo from './text-field-demo';
 import './normalize.css'
 import CheckboxSlideDemo from './check-box-slide-demo';
-import { Tooltip } from 'daro-ui-kit';
+import { Tooltip } from 'oaky-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
 import TableGridDemo from './table-grid-demo';

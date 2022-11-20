@@ -1,7 +1,7 @@
 
-import { CenteringContainer } from "daro-ui-kit"
-import { Button, ButtonNeon } from "daro-ui-kit"
-import { PreviousNextButtons } from "daro-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit"
+import { Button, ButtonNeon } from "oaky-ui-kit"
+import { PreviousNextButtons } from "oaky-ui-kit"
 
 function ButtonDemo() {
 

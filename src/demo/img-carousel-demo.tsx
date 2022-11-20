@@ -1,6 +1,6 @@
 
-import { CenteringContainer } from "daro-ui-kit"
-import {ImgCarousel} from "daro-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit"
+import {ImgCarousel} from "oaky-ui-kit"
 import Image1 from './assets/aurora-1197753_960_720.jpg';
 import Image2 from './assets/sunset-1373171__340.jpg';
 

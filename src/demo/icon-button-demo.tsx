@@ -1,8 +1,8 @@
-import {IconButton} from "daro-ui-kit"
+import {IconButton} from "oaky-ui-kit"
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { RiFunctionFill } from "react-icons/ri";
 import { RiMailSendFill } from "react-icons/ri";
-import { CenteringContainer } from "daro-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit"
 
 
 function IconButtonDemo() {

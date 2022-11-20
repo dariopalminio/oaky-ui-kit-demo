@@ -1,8 +1,8 @@
 import { useState } from "react";
-import {Alert} from "daro-ui-kit"
-import {useAlertPopup} from "daro-ui-kit";
-import {AlertPopup} from "daro-ui-kit"
-import { CenteringContainer } from "daro-ui-kit";
+import {Alert} from "oaky-ui-kit"
+import {useAlertPopup} from "oaky-ui-kit";
+import {AlertPopup} from "oaky-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit";
 
 
 function AlertsDemo() {

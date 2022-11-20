@@ -5,7 +5,7 @@ import React from "react";
 
   return (
     <div>
-    <p>© 2022 Daro-ui-kit. Content is available under these licenses.
+    <p>© 2022 oaky-ui-kit. Content is available under these licenses.
         Power by Daro.</p>
   </div>
   );

@@ -1,4 +1,4 @@
-import { CenteringContainer, LinksStepper } from "daro-ui-kit"
+import { CenteringContainer, LinksStepper } from "oaky-ui-kit"
 import { useState } from "react";
 
 

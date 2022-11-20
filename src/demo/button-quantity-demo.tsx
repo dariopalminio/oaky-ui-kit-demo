@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CenteringContainer } from "daro-ui-kit"
-import {ButtonQuantity} from "daro-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit"
+import {ButtonQuantity} from "oaky-ui-kit"
 
 function ButtonQuantityDemo() {
 

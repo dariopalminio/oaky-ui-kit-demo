@@ -1,6 +1,6 @@
 
-import { CenteringContainer } from "daro-ui-kit";
-import {TableGridSelectable,TableGrid} from "daro-ui-kit";
+import { CenteringContainer } from "oaky-ui-kit";
+import {TableGridSelectable,TableGrid} from "oaky-ui-kit";
 
 
 function TableGridDemo() {

@@ -1,7 +1,7 @@
 
-import { CenteringContainer } from "daro-ui-kit"
-import {ModalDialog} from "daro-ui-kit"
-import {useModalDialog} from "daro-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit"
+import {ModalDialog} from "oaky-ui-kit"
+import {useModalDialog} from "oaky-ui-kit"
 
 
 function ModalDialogDemo() {

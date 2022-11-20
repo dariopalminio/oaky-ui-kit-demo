@@ -1,4 +1,4 @@
-import { MenuIconButton, MenuItemType } from "daro-ui-kit";
+import { MenuIconButton, MenuItemType } from "oaky-ui-kit";
 import { RiAccountCircleFill, RiShieldUserFill, RiUserAddFill } from "react-icons/ri";
 
 const Bar: React.FC = () => {

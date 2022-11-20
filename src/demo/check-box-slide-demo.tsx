@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {CheckBoxSlide} from "daro-ui-kit";
+import {CheckBoxSlide} from "oaky-ui-kit";
 
 
 function CheckboxSlideDemo() {

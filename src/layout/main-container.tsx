@@ -1,4 +1,4 @@
-import { Alert } from "daro-ui-kit";
+import { Alert } from "oaky-ui-kit";
 import { FunctionComponent } from "react";
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";

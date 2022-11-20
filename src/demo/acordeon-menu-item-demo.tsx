@@ -1,8 +1,8 @@
 
-import {AccessType, MenuItemType} from "daro-ui-kit"
-import {useAlertPopup} from "daro-ui-kit";
+import {AccessType, MenuItemType} from "oaky-ui-kit"
+import {useAlertPopup} from "oaky-ui-kit";
 import { RiFunctionFill, RiHome2Fill, RiShoppingCart2Fill } from "react-icons/ri";
-import {AcordeonMenuList} from "daro-ui-kit";
+import {AcordeonMenuList} from "oaky-ui-kit";
 
 
 function AcordeonMenuItemDemo() {

@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
-import { CenteringContainer } from "daro-ui-kit"
-import {SelectOptions} from "daro-ui-kit"
+import { CenteringContainer } from "oaky-ui-kit"
+import {SelectOptions} from "oaky-ui-kit"
 
 interface Props {
     layoutStyle: string;

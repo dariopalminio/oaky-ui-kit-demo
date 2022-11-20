@@ -1,4 +1,4 @@
-import {CircularProgress} from "daro-ui-kit"
+import {CircularProgress} from "oaky-ui-kit"
 
 function ProgressDemo() {
 
