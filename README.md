@@ -1,5 +1,5 @@
 # oaky-ui-kit-demo
-![oaky-ui-kit-logo.png](./src/deo/assets/oaky-ui-kit-logo.png)
+![oaky-ui-kit-logo.png](src/deo/assets/oaky-ui-kit-logo.png)
 
 App demo to test oaky-ui-kit library (React, Typescript app)
 
