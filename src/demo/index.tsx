@@ -15,6 +15,7 @@ import CheckboxSlideDemo from './check-box-slide-demo';
 import { Tooltip } from 'daro-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
+import TableGridDemo from './table-grid-demo';
 
 
 interface Props {
@@ -33,7 +34,7 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <SelectOptsDemo
                 layoutStyle={layoutStyle}
                 onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
-<ModalDialogDemo />
+            <ModalDialogDemo />
             <AcordeonMenuItemDemo />
             <AlertsDemo />
             <ButtonDemo />
@@ -48,7 +49,7 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <TextFieldDemo />
             <h1>Tooltip</h1>
             <Tooltip helpText={"Example help text!"}>Hover mouse over (on yellow background) to show help text</Tooltip>
-
+            <TableGridDemo/>
 
         </div>
     )
