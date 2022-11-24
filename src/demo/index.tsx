@@ -17,6 +17,7 @@ import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
 import TableGridDemo from './table-grid-demo';
 import logo from './assets/oaky-ui-kit-logo.png';
+import SplitableContainerDemo from './splitable-container-demo';
 
 interface Props {
     layoutStyle: string;
@@ -49,7 +50,7 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
             <h1>Tooltip</h1>
             <Tooltip helpText={"Example help text!"}>Hover mouse over (on yellow background) to show help text</Tooltip>
             <TableGridDemo/>
-
+            <SplitableContainerDemo />
         </div>
     )
 }
