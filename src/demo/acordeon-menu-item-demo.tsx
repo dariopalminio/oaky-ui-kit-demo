@@ -8,6 +8,26 @@ import {AcordeonMenuList} from "oaky-ui-kit";
 function AcordeonMenuItemDemo() {
     const { show, toggle } = useAlertPopup();
 
+    const subSubMenu: MenuItemType[] = [
+      {
+        key: "111",
+        title: ("Sub Sub Menu 1"),
+        path: "/",
+        icon: <RiHome2Fill />,
+        access: ["anonymous", "user", "admin"],
+        submenu: null
+      },
+      {
+        key: "112",
+        title: ("Sub Sub Menu 2"),
+        path: "/demo",
+        icon: <RiFunctionFill />,
+        access: ["anonymous", "user", "admin"],
+        submenu: null
+      },
+  
+    ];
+
     const subMenu: MenuItemType[] = [
         {
           key: "11",
@@ -31,7 +51,7 @@ function AcordeonMenuItemDemo() {
           path: "/",
           icon: <RiShoppingCart2Fill />,
           access: [AccessType.ANONYMOUS, AccessType.USER, AccessType.ADMIN],
-          submenu: null
+          submenu: subSubMenu
         },
     
       ];

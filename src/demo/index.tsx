@@ -16,7 +16,7 @@ import { Tooltip } from 'oaky-ui-kit';
 import LinksStepperDemo from './link-steppers.-demo';
 import AcordeonMenuItemDemo from './acordeon-menu-item-demo';
 import TableGridDemo from './table-grid-demo';
-import logo from './assets/oaku-ui-kit-logo.png';
+import logo from './assets/oaky-ui-kit-logo.png';
 
 interface Props {
     layoutStyle: string;
