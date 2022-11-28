@@ -23,6 +23,18 @@ function App() {
     setLayoutStyle(newLayoutStyle);
   };
 
+  const MyLogoImage = () => {
+    return (
+      <img style={{ marginRight: "10px" }}
+      src={logoImg}
+      onError={({ currentTarget }) => {
+          currentTarget.onerror = null; // prevents looping
+          currentTarget.src = "../images/no-image.jpg";
+      }}
+      loading="lazy" />
+    )
+  }
+
   return (
     <div className="App">
       <Router>
@@ -31,7 +43,7 @@ function App() {
 
             {(layoutStyle === "core") && (
               <LayoutCore
-                topbar={<TopNavBar logo={logoImg} bar={<Bar />}/>}
+                topbar={<TopNavBar logo={MyLogoImage()} bar={<Bar />}/>}
                 leftbar={<SideBar background={"#305F87"}/>}
                 footer={<Footer />}
               >
