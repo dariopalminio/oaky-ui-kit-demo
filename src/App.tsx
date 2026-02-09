@@ -55,7 +55,7 @@ function App() {
             
             {(layoutStyle === "sensitive") && (
               <LayoutSensitive
-                topbar={<TopNavBar style={{background:"#C6DBEC"}} logo={logoImg} bar={<Bar />} />}
+                topbar={<TopNavBar style={{background:"#C6DBEC"}} logo={MyLogoImage()} bar={<Bar />} />}
                 leftbar={<SideBar background={"#6EA3CD"}/>}
                 footer={<Footer />}
               >

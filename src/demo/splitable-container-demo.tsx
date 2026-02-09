@@ -34,9 +34,7 @@ const SplitableContainerDemo: React.FC<Props> = ({ }) => {
                         <p>Individuals and interactions over processes and tools</p>
                         <p>Working software over comprehensive documentation</p>
                         <p>Customer collaboration over contract negotiation</p>
-                        <p>Responding to change over following a plan</p>
-                        <p>That is, while there is value in the items on</p>
-                        <p>the right, we value the items on the left more.</p>
+
                     </SplitRight>
                 </SplitableContainer>
             </ContainerToSplitable>

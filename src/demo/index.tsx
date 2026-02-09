@@ -34,15 +34,24 @@ const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
         <div>
             <img src={logo} alt="Oaky-ui-kit"  width="20%"/>
             <p>UI Kit con React, Typescript, styled-components and CSS</p>
-            <h2>Layout</h2>
-            <p style={textStyle}>Componente de selección de estilo de diseño que permite al usuario seleccionar un estilo de diseño predefinido.</p>
+
+            <h2>Sistema de layout</h2>
+            <p style={textStyle}>El layout por defecto es el clásico barra superior (topbar), con barra lateral (leftbar, generalmente izquierda) con el contenedor principal de páginas (MainContainer) y un pié de página (footer).</p>
+
+            <h2>Estilo de Layout</h2>
             <p style={textStyle}>El layout es configurable con “layoutStyle” y puede tener los valores de: core, bullet, sensitive. </p>
             <p style={textStyle}>El tipo “core” es la opción en que el sidebar (barra lateral de menú) se encuentra oculto y se desoculta (se abre) haciendo clic en el ícono de menú superior (generalmente en la izquierda), y para cerrarlo se hace clic en una cruz de cierre. </p>
-            <p style={textStyle}>El tipo “sensitive” es la opción en que el sidebar está oculto y se abre cuando se pasa el mouse por arriba. Y la opción “bullet” consiste en abrir o cerrar el sidebar con un “bullet” (ícono circular) sobre el borde de la barra lateral.</p>
+            <p style={textStyle}>El tipo “sensitive” es la opción en que el sidebar está oculto y se abre cuando se pasa el mouse por arriba. </p>
+            <p style={textStyle}>Y la opción “bullet” consiste en abrir o cerrar el sidebar con un “bullet” (ícono circular) sobre el borde de la barra lateral.</p>
+
             <SelectOptsDemo
                 layoutStyle={layoutStyle}
                 onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
             <ModalDialogDemo />
+
+            <h2>MenuIconButton</h2>
+            <p style={textStyle}>Los íconos botones de menú despliegan un menú emergente de opciones cuando se hace clic sobre ellos. El ejemplo es el ícono en la esquina superior derecha, en la barra superior.</p>
+            
             <AcordeonMenuItemDemo />
             <AlertsDemo />
             <ButtonDemo />
