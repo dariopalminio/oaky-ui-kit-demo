@@ -59,7 +59,7 @@ function AcordeonMenuItemDemo() {
       const menu: MenuItemType[] = [
         {
           key: "111",
-          title: ("My Menu A"),
+          title: ("My Menu Acordeon A"),
           path: "/",
           icon: <RiHome2Fill />,
           access: ["anonymous", "user", "admin"],
@@ -75,7 +75,7 @@ function AcordeonMenuItemDemo() {
           },
           {
             key: "16",
-            title: ("Acordeon"),
+            title: ("My Menu Acordeon C"),
             path: "/",
             icon: <RiHome2Fill />,
             access: ["anonymous", "user", "admin"],
@@ -83,6 +83,10 @@ function AcordeonMenuItemDemo() {
           }
         ]
       ;
+
+      const textStyle = {
+          fontSize: "11px", 
+      };
 
       const handleClick = (item: MenuItemType) => {
         //Here do navigate to path
@@ -93,6 +97,8 @@ function AcordeonMenuItemDemo() {
 
         <div>
             <h2>AcordeonMenuList</h2>
+            <p style={textStyle}>Componente de menú acordeón que permite mostrar y ocultar submenús. 
+                Se puede usar para organizar elementos de menú en una estructura jerárquica.</p>
 
             <AcordeonMenuList list={menu} onClick={(item) => handleClick(item)} />
                

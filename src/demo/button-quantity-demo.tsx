@@ -25,10 +25,16 @@ function ButtonQuantityDemo() {
         setQuantity4(newQuantityValue);
     };
 
+    const textStyle = {
+        fontSize: "11px", 
+    };
+
     return (
 
         <div>
             <h2>ButtonQuantity</h2>
+             <p style={textStyle}>Un botón de cantidad que permite incrementar o decrementar un valor numérico. Se puede usar para seleccionar una cantidad de productos, por ejemplo.</p>
+           
             <CenteringContainer>
                 <ButtonQuantity
                     value={quantity1}

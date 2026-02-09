@@ -15,10 +15,16 @@ function SelectListDemo() {
         SetSelectedOption(index);
     };
 
+    const textStyle = {
+        fontSize: "11px", 
+    };
+
     return (
 
         <div>
             <h2>SelectList</h2>
+            <p style={textStyle}>Los componentes de lista de selección se utilizan para recopilar información proporcionada por el usuario de una lista de opciones. 
+                Además permite ejecutar acciones mediante botones de íconos que lanzan las acciones (por ejemplo “borrar” un elemento del listado). Por ejemplo puede servir para mostrar una lista de direcciones, permitir elegir una dirección o borrar una dirección.</p>
             <CenteringContainer>
 
                 <SelectList

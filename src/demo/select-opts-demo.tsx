@@ -17,13 +17,18 @@ const SelectOptsDemo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
         onLayoutChange(selectedOption);
     };
 
+    const textStyle = {
+        fontSize: "11px", 
+    };
+    
     return (
 
         <div>
             <h2>SelectOptions</h2>
+            <p style={textStyle}>Componente de selección de opciones que permite al usuario seleccionar una opción de una lista predefinida.</p>
             <CenteringContainer>
             <SelectOptions
-                label={('Select core, sensitive or leftButton Layout style type:')}
+                label={('Seleccione el tipo de layout que da el estilo del menú lateral:')}
                 list={listToSelect}
                 selectedOption={layoutStyle}
                 setSelectedOption={(selectedOption) => handleSelect(selectedOption)} 

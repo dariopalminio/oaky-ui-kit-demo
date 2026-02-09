@@ -22,7 +22,7 @@ interface Props {
   const LeftMenuData: MenuItemType[] = [
     {
       key: "11",
-      title: ("menu.home"),
+      title: ("Menu main"),
       path: "/",
       icon: <RiHome2Fill />,
       access: ["anonymous", "user", "admin"],
@@ -30,7 +30,7 @@ interface Props {
     },
     {
       key: "12",
-      title: ("menu.option2"),
+      title: ("Menu option 2"),
       path: "/demo",
       icon: <RiFunctionFill />,
       access: ["anonymous", "user", "admin"],
@@ -38,7 +38,7 @@ interface Props {
     },
     {
       key: "13",
-      title: ("menu.option3"),
+      title: ("Menu option 3"),
       path: "/",
       icon: <RiShoppingCart2Fill />,
       access: [AccessType.ANONYMOUS, AccessType.USER, AccessType.ADMIN],
@@ -85,7 +85,7 @@ interface Props {
   const menu: MenuItemType[] = [
     {
       key: "111",
-      title: ("My Menu A"),
+      title: ("My Menu Acordeon A"),
       path: "/",
       icon: <RiHome2Fill />,
       access: ["anonymous", "user", "admin"],
@@ -101,7 +101,7 @@ interface Props {
       },
       {
         key: "16",
-        title: ("Acordeon"),
+        title: ("My Menu Acordeon C"),
         path: "/",
         icon: <RiHome2Fill />,
         access: ["anonymous", "user", "admin"],

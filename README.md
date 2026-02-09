@@ -1,15 +1,11 @@
 # oaky-ui-kit-demo
 ![oaky-ui-kit-logo.png](src/demo/assets/oaky-ui-kit-logo.png)
 
-App demo to test oaky-ui-kit library (React, Typescript app)
+Demostración de oaky-ui-kit library (React, Typescript app), un sistema de componentes React (react-library), accesible y personalizable que permite a equipos de desarrollo construir aplicaciones web con velocidad y consistencia, manteniendo compatibilidad con las últimas características de React.
 
 
 ## Stay in touch
 
 - Author - [Dario Palminio](linkedin.com/in/palminio)
-
-## Logo and tribute
-
-The name is based on the cartoon character named oaky in tribute to Manuel García Ferré.
-
+Esta aplicación y librería fue realizada con motivos de aprendizaje de programación react.
 

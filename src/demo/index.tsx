@@ -26,11 +26,19 @@ interface Props {
 
 const Demo: React.FC<Props> = ({ layoutStyle, onLayoutChange }) => {
 
+    const textStyle = {
+        fontSize: "11px", 
+    };
+
     return (
         <div>
             <img src={logo} alt="Oaky-ui-kit"  width="20%"/>
-            <p>UI Kit with react, typescript, styled-components and CSS</p>
-
+            <p>UI Kit con React, Typescript, styled-components and CSS</p>
+            <h2>Layout</h2>
+            <p style={textStyle}>Componente de selección de estilo de diseño que permite al usuario seleccionar un estilo de diseño predefinido.</p>
+            <p style={textStyle}>El layout es configurable con “layoutStyle” y puede tener los valores de: core, bullet, sensitive. </p>
+            <p style={textStyle}>El tipo “core” es la opción en que el sidebar (barra lateral de menú) se encuentra oculto y se desoculta (se abre) haciendo clic en el ícono de menú superior (generalmente en la izquierda), y para cerrarlo se hace clic en una cruz de cierre. </p>
+            <p style={textStyle}>El tipo “sensitive” es la opción en que el sidebar está oculto y se abre cuando se pasa el mouse por arriba. Y la opción “bullet” consiste en abrir o cerrar el sidebar con un “bullet” (ícono circular) sobre el borde de la barra lateral.</p>
             <SelectOptsDemo
                 layoutStyle={layoutStyle}
                 onLayoutChange={(newLayoutStyle) => onLayoutChange(newLayoutStyle)} />
