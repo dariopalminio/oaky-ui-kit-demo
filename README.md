@@ -1,4 +1,6 @@
 # oaky-ui-kit-demo
+> ⚠️ **Disclaimer**: This is a learning exercise and proof of concept. Not for production use. Read more in Disclaimer
+> 
 ![oaky-ui-kit-logo.png](src/demo/assets/oaky-ui-kit-logo.png)
 
 Demostración de oaky-ui-kit library (React, Typescript app), un sistema de componentes React (react-library), accesible y personalizable que permite a equipos de desarrollo construir aplicaciones web con velocidad y consistencia, manteniendo compatibilidad con las últimas características de React.
